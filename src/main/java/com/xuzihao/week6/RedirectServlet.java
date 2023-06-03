@@ -1,4 +1,4 @@
-package com.xuzihao.controller;
+package com.xuzihao.week6;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -7,12 +7,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "HomeServlet", value = "/home")
-public class HomeServlet extends HttpServlet {
+@WebServlet(name = "RedirectServlet", value = "/RedirectServlet")
+public class RedirectServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        request.getRequestDispatcher("WEB-INF/views/index.jsp").forward(request, response);
+        response.sendRedirect("https://github.com/");
     }
 
     @Override

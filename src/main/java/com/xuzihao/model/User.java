@@ -1,20 +1,14 @@
 package com.xuzihao.model;
 
+import java.util.Date;
+
 public class User {
     private String id;
-    private String username;
+    private String UserName;
     private String password;
     private String Email;
-    private String gender;
-    private String birthdate;
-    public User(String id, String username, String password, String email, String gender, String birthdate) {
-        this.id = id;
-        this.username = username;
-        this.password = password;
-        Email = email;
-        this.gender = gender;
-        this.birthdate = birthdate;
-    }
+    private String Gender;
+    private Date Birthdate;
 
     public String getId() {
         return id;
@@ -24,12 +18,12 @@ public class User {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return UserName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        UserName = userName;
     }
 
     public String getPassword() {
@@ -49,30 +43,39 @@ public class User {
     }
 
     public String getGender() {
-        return gender;
+        return Gender;
     }
 
     public void setGender(String gender) {
-        this.gender = gender;
+        Gender = gender;
     }
 
-    public String getBirthdate() {
-        return birthdate;
+    public Date getBirthdate() {
+        return Birthdate;
     }
 
-    public void setBirthdate(String birthdate) {
-        this.birthdate = birthdate;
+    public void setBirthdate(Date birthdate) {
+        Birthdate = birthdate;
+    }
+
+    public User(String id, String userName, String password, String email, String gender, Date birthdate) {
+        this.id = id;
+        UserName = userName;
+        this.password = password;
+        Email = email;
+        Gender = gender;
+        Birthdate = birthdate;
     }
 
     @Override
     public String toString() {
-        return "user{" +
+        return "User{" +
                 "id='" + id + '\'' +
-                ", username='" + username + '\'' +
+                ", UserName='" + UserName + '\'' +
                 ", password='" + password + '\'' +
                 ", Email='" + Email + '\'' +
-                ", gender='" + gender + '\'' +
-                ", birthdate='" + birthdate + '\'' +
+                ", Gender='" + Gender + '\'' +
+                ", Birthdate='" + Birthdate + '\'' +
                 '}';
     }
 }

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="_2021211001001022xuzihao:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>_2021211001001022xuzihao</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="_2021211001001022xuzihao-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="_2021211001001022xuzihao:war exploded" />
+    </root>
+  </artifact>
+</component>
